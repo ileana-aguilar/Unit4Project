@@ -66,7 +66,7 @@ const App = () => {
       <h1>Discover Cool Cats</h1>
       {catImage && (
         <div>
-          <img src={catImage} alt={breedDetails.name} style={{ width: '400px' }} />
+          <img src={catImage} title={breedDetails.name} alt={breedDetails.name} style={{ width: '400px' }} />
             <div>
               <p>Attributes of a {breedDetails.name}:</p>
               <button onClick={() => addToBanList(breedDetails.name)}>{breedDetails.name}</button>
